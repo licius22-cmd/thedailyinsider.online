@@ -201,7 +201,7 @@
                         <nav class="pg-nav" data-open="0" data-menu="dropdown" data-brk="768" style="width: 100%; display: block; align-self: center; background: rgb(255, 255, 255); color: rgb(24, 24, 34); border-bottom: 2px solid rgb(228, 229, 236); padding: 12px 18px; position: sticky; top: 0px; z-index: 40; max-width: 100%; box-sizing: border-box;">
                             <div style="display: flex; align-items: center; gap: 32px; width: 100%;">
                                    
-                                <div class="nb-desktop" style="align-items: center; gap: 24px; flex: 1 1 0%; justify-content: center;"><a href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; font-size: 0.95em;">U.S. News</a><a href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; font-size: 0.95em;">Health</a>
+                                <div class="nb-desktop" style="align-items: center; gap: 24px; flex: 1 1 0%; justify-content: center;"><a href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; font-size: 0.95em;">U.S.</a><a href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; font-size: 0.95em;">Health</a>
                                     <a
                                     href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; font-size: 0.95em;">Food</a><a href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; font-size: 0.95em;">Life</a></div>
                                 <button type="button" aria-label="Toggle menu" class="nb-burger" style="order: 2; margin-left: auto; margin-right: 0px; background: transparent; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 8px; color: inherit; cursor: pointer; align-items: center; justify-content: center; flex-shrink: 0;">
@@ -212,7 +212,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="nb-panel" style="position: absolute; left: 0px; right: 0px; top: 100%; flex-direction: column; gap: 12px; padding: 12px 18px; background: rgb(255, 255, 255); border-top: 1px solid rgb(228, 229, 236); box-shadow: rgba(0, 0, 0, 0.35) 0px 14px 30px -18px; z-index: 60; color: rgb(24, 24, 34); text-align: left; align-items: stretch;"><a href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; padding: 6px 0px;">U.S. News</a><a href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; padding: 6px 0px;">Health</a>
+                            <div class="nb-panel" style="position: absolute; left: 0px; right: 0px; top: 100%; flex-direction: column; gap: 12px; padding: 12px 18px; background: rgb(255, 255, 255); border-top: 1px solid rgb(228, 229, 236); box-shadow: rgba(0, 0, 0, 0.35) 0px 14px 30px -18px; z-index: 60; color: rgb(24, 24, 34); text-align: left; align-items: stretch;"><a href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; padding: 6px 0px;">U.S. </a><a href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; padding: 6px 0px;">Health</a>
                                 <a
                                 href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; padding: 6px 0px;">Food</a><a href="#" target="_self" style="color: inherit; text-decoration: none; font-weight: 500; padding: 6px 0px;">Life</a></div>
                         </nav>
@@ -509,6 +509,114 @@
                     </section>
                 </section>
             </section>
+
+            <!-- ============================================================
+     HEALTH DISCLAIMER FOOTER — paste before </body>
+     Scoped with .hdf- prefix to avoid clashing with page CSS.
+     Edit the 4 variables in :root-equivalent block below.
+     ============================================================ -->
+
+<style>
+  .hdf-footer{
+    --hdf-bg:#0e1116;
+    --hdf-text:#8b93a1;
+    --hdf-strong:#c9d1dc;
+    --hdf-link:#9aa6b8;
+    --hdf-rule:rgba(255,255,255,.08);
+
+    background:var(--hdf-bg);
+    color:var(--hdf-text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:13px;
+    line-height:1.65;
+    padding:40px 20px 32px;
+    margin:0;
+    -webkit-font-smoothing:antialiased;
+  }
+  .hdf-inner{max-width:760px;margin:0 auto;text-align:center;}
+
+  .hdf-nav{
+    margin:0 0 24px;padding:0;list-style:none;
+    display:flex;flex-wrap:wrap;justify-content:center;
+    gap:10px 22px;
+  }
+  .hdf-nav a{
+    color:var(--hdf-link);text-decoration:none;
+    font-size:13px;border-bottom:1px solid transparent;
+  }
+  .hdf-nav a:hover,
+  .hdf-nav a:focus-visible{color:var(--hdf-strong);border-bottom-color:currentColor;}
+  .hdf-nav a:focus-visible{outline:2px solid var(--hdf-strong);outline-offset:3px;}
+
+  .hdf-rule{border:0;border-top:1px solid var(--hdf-rule);margin:0 0 24px;}
+
+  .hdf-block{margin:0 0 16px;text-align:left;}
+  .hdf-block:last-of-type{margin-bottom:24px;}
+  .hdf-label{
+    display:block;color:var(--hdf-strong);
+    font-size:11px;letter-spacing:.09em;text-transform:uppercase;
+    font-weight:600;margin-bottom:4px;
+  }
+  .hdf-block p{margin:0;}
+
+  .hdf-copy{
+    text-align:center;font-size:12px;color:var(--hdf-text);
+    margin:0;padding-top:20px;border-top:1px solid var(--hdf-rule);
+  }
+
+  @media (max-width:600px){
+    .hdf-footer{padding:32px 18px 26px;font-size:12.5px;}
+    .hdf-nav{gap:8px 16px;}
+  }
+</style>
+
+<footer class="hdf-footer" role="contentinfo">
+  <div class="hdf-inner">
+
+    <ul class="hdf-nav">
+      <li><a href="/contact">Contact Us</a></li>
+      <li><a href="/privacy-policy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms &amp; Conditions</a></li>
+      <li><a href="/refund-policy">Refund Policy</a></li>
+      <li><a href="/disclaimer">Full Disclaimer</a></li>
+    </ul>
+
+    <hr class="hdf-rule">
+
+   ]
+    <div class="hdf-block">
+      <span class="hdf-label">Not Medical Advice</span>
+      <p>The information on this page is provided for general educational purposes only and is
+      not a substitute for professional medical advice, diagnosis, or treatment. Always talk to
+      your physician or another qualified health provider before starting any supplement,
+      especially if you are pregnant, nursing, under 18, taking prescription medication, or
+      living with a diagnosed medical condition. Never disregard or delay professional medical
+      advice because of something you read here.</p>
+    </div>
+
+    <div class="hdf-block">
+      <span class="hdf-label">Results Disclaimer</span>
+      <p>Individual results vary and depend on factors such as diet, exercise, metabolism, age,
+      and consistency of use. Any testimonials shown reflect the personal experience of those
+      individuals and are not a guarantee that you will achieve the same or similar outcomes.
+      No result is typical or promised.</p>
+    </div>
+
+    <div class="hdf-block">
+      <span class="hdf-label">Marketing Disclosure</span>
+      <p>This page is an advertisement. We may receive compensation when you purchase through
+      the links on this site. This does not affect the price you pay.</p>
+    </div>
+
+    <p class="hdf-copy">
+      &copy; <span id="hdf-year">2026</span> Brand Name. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+
+<script>document.getElementById('hdf-year').textContent=new Date().getFullYear();</script>
+            
         </div>
     </div>
     <script>
