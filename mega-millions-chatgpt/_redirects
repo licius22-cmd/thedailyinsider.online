@@ -1,0 +1,6 @@
+# Proxy live jackpot API and checkout functions
+/api/draw  https://mega-millions-play.netlify.app/api/draw  200
+/.netlify/functions/*  https://mega-millions-play.netlify.app/.netlify/functions/:splat  200
+
+# SPA fallback (all routes handled by index.html)
+/*  /index.html  200
